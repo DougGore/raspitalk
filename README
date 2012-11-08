@@ -1,0 +1,20 @@
+"Dust off your Raspberry Pi"
+----------------------------
+
+Here is the source code and original presentation slides from my unified.diff talk on November 7th 2012 in Cardiff.
+
+The code examples are designed for Qt5 but were originally developed for Qt 4.8, Qt5 is available in beta from here as precompiled Windows, OSX and Linux binaries as well as pure source form:
+
+http://releases.qt-project.org/qt5.0/beta1/
+
+If you want to run Qt5 on the Raspberry Pi I recommend you download and run this Linux and OSX compatible script that will do everything needed to download Raspbian and integerate Qt5 into the image in a single operation:
+
+https://gitorious.org/bakeqtpi
+
+The Qt5 Cinematic Experience program I demonstrated is not written by myself and can be downloaded here:
+
+http://quitcoding.com/?page=work#cinex
+
+A note on the presentation, I made a factual error when presenting the diagram about clocks and reading data. The data should be read on the rising edge (0 to 1 transition) not the falling edge as I stated because the transisiton in data pin value should happen ahead of the data being read otherwise the transition may not have completed when the clock transisiton occurs. I apologise and can only say this is what happens when a computer scientist talks about hardware I/O :-)
+
+If you have any questions send me a tweet @DougGore
